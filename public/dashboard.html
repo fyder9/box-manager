@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Box-manager</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Roboto', sans-serif;
+            margin-left: 100px; /* Per fare spazio alla navbar */
+        }
+
+        /* Navbar verticale a sinistra */
+        .navbar {
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #f8f9fa;
+            width: 100px;
+            padding-top: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            display: block;
+            color: #343a40;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover della navbar */
+        .navbar a:hover {
+            background-color: #e9ecef;
+        }
+
+        /* Icone della navbar */
+        .navbar a img {
+            width: 40px;
+            height: auto;
+            transition: transform 0.2s ease;
+        }
+
+        /* Aggiungi l'effetto hover sulle icone */
+        .navbar a:hover img {
+            transform: scale(1.2); /* Ingrandisce le icone al 20% */
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            border: 2px solid #ccc;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: #f9f9f9;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .form-control {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar verticale con icone -->
+    <div class="navbar">
+        <a href="targhe.html"><img src="home.png" alt="Icon 1" class="icon"></a>
+        <a href="list.html"><img src="list_icon.png" alt="Icon 2" class="icon"></a>
+        <a href="colonnine.html"><img src="charging-station.png" alt="Icon 3" class="icon"></a>
+    </div>
+
+    <div class="container">
+        <h1>Box Manager</h1>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
